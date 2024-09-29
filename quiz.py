@@ -4,11 +4,6 @@ September 25
 Quiz Generator
 '''
 
-'''
-**DELETE BEFORE SUBMITTING**
-topic: art history
-'''
-
 correct_answers = 0
 
 print("Welcome to Sid's Art History Quiz!")
@@ -21,8 +16,6 @@ if (user_response == "c"):
     correct_answers = correct_answers +1
 else:
     print("Incorrect")
-
-
 
 user_response = input("Which of these crimes did Baroque painter Caravaggio NOT commit? \nA: Threatening the Pope\nB. Carrying a sword without a permit\nC: Beating a man with a stick\nD: Writing satirical poems about another artist\n:")
 user_response = user_response.lower().strip()
@@ -45,8 +38,9 @@ else:
     print("Incorrect")
 
 
-user_response = input("Francis Bacon's lover, George Dyer, was found dead two days before the biggest art showing of Bacon's life. Dyer had died\n\
-in the same position Bacon had once painted him:____\n: ")
+user_response = input("Francis Bacon's lover, George Dyer, was found dead two days before\n\
+the biggest art showing of Bacon's life. Dyer had died in the same position\n\
+Bacon had once painted him:____\n: ")
 if (user_response == "on the toilet"):
     print("Correct!")
     correct_answers = correct_answers +1
@@ -54,7 +48,8 @@ else:
     print("Incorrect")
 
 
-user_response = input("Andy Warhol once said in his diaries that having his _____ ripped off was worse than being shot.\n:")
+user_response = input("Andy Warhol once said in his diaries that having his _____ ripped\n\
+off was worse than being shot.\n:")
 if (user_response == "wig"):
     print("Correct!")
     correct_answers = correct_answers +1
@@ -71,7 +66,9 @@ else:
     print("Incorrect") 
 
 
-user_response = input("Water-soluble ink (composed of black soot and a binding agent usually made from fish bones) was invented in which country in 2500 BC?\n: ")
+user_response = input("Water-soluble ink (composed of black soot and a\n\
+binding agent usually made from fish bones) was invented in\n\
+which country in 2500 BC?\n: ")
 if (user_response == "china"):
     print("Correct!")
     correct_answers = correct_answers +1
@@ -86,6 +83,67 @@ if (user_response == "4" or "four"):
 else:
     print("Incorrect")
 
+
+user_response = input("A popular pigment during the Pre-Raphaelite era was Mummy Brown,\nfamous for never drying and being made from ground-up:____\n:")
+if (user_response == "mummies" or "egyptian mummies"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")
+
+
+user_response = input("Which Botticelli painting is known for including 500 identifiable plant species? \n: ")
+if (user_response == "birth of venus" or "the birth of venus"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")
+
+
+user_response = input("This artist is considered the first female painter who was permitted to depict female nudity\n: ")
+if (user_response == "lavinia fontana"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")             
+
+
+user_response = input("It's theorized that Artemisia Gentileschi studied ____'s \n\
+notes on anatomy to ensure the spurts of blood were accurate in her\n\
+depiction of Judith Beheading Holophernes\n: ")
+if (user_response == "galileo" or "galileo galilei"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")   
+
+
+user_response = input("What creature is Sepia ink harvested from?\n: ")
+if (user_response == "cuttlefish"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")
+
+
+user_response = input("The Black Paintings is a series of 14 dark and disturbing paintings by Francisco Goya.\n\
+What were they painted on?\nA: Wooden floorboards\nB: Lamb hide\nC: Human skin\nD: His dining room walls\n: ")
+if (user_response == "d"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")
+
+
+user_response = input("Ruthie Tompson, born in Portland, Maine, went on to become a Disney Legend\n\
+for her work on such films as \"Snow White and the Seven Dwarves\" and \"Mary Poppins\".\n\
+ How old was she when she died in 2021?\nA: 101\nB: 105\nC: 111\nD: 114\n: ")
+if (user_response == "c"):
+    print("Correct!")
+    correct_answers = correct_answers +1
+else:
+    print("Incorrect")
+                      
 
 percent_correct = (correct_answers/15)*100
 print(f"Your score: {int(correct_answers)} / 15")
